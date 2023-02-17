@@ -44,14 +44,17 @@ header h2{
 img{
      width: 280px;
 }
-.card-box img{
+/* .card-box img{
      width: 200px;
      margin-top: 20px;
+} */
+.box-img img{
+     width: 100%;
 }
-.card-box img{
+/* .card-box img{
      width: 100%;
      margin-top: 20px;
-}
+} */
 .card-container{
      display: flex;
      justify-content: space-around;
@@ -67,6 +70,7 @@ img{
      border-radius: 10px;
 }
 .card-box h3{
+     font-size: 3rem;
      margin-top: 10px;
      margin-bottom: 5px;
 }

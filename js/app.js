@@ -2,16 +2,19 @@ document.getElementById("blog").addEventListener("click",function(){
      window.location.href = 'blog.html';
 })
 // blog end 
+let count = 0;
+//  count ++;
 // first card
 document.getElementById("first-btn").addEventListener("click",function(){
+     count ++;
    const numb1 =  numberInput('num1');
    const numb2 =  numberInput('num10');
+    
    const ruselt = 0.5 *(numb1 * numb2);
    const ruselts = (ruselt).toFixed(2);
-   
   const tr = document.createElement("tr")
    tr.innerHTML = `
-          <td>${1}</td>
+          <td>${count}</td>
           <td>Triangle</td>
           <td>${ruselts} cm<sup>2</sup></td>
           <td>btn</td>
@@ -22,14 +25,14 @@ document.getElementById("first-btn").addEventListener("click",function(){
 
 // secound card
 document.getElementById('second-btn').addEventListener('click',function(){
+     count++;
      const numb2 =  numberInput('num2');
      const numb20 =  numberInput('num20');
      const ruselt = numb2* numb20;
      const ruselts = (ruselt).toFixed(2);
-     
      const tr = document.createElement("tr")
           tr.innerHTML = `
-          <td>${2}</td>
+          <td>${count}</td>
           <td>Rectangle</td>
           <td>${ruselts} cm<sup>2</sup></td>
           <td>btn</td>
@@ -39,14 +42,14 @@ document.getElementById('second-btn').addEventListener('click',function(){
 });
 // third card
 document.getElementById('thired-card').addEventListener("click",function(){ 
+     count++;
      const n3 = getinnText('num3');
      const n30 = getinnText('num30');
      const ruselt = n3 * n30 ;
      const ruselts = (ruselt).toFixed(2);
-
      const tr = document.createElement("tr")
           tr.innerHTML = `
-          <td>${3}</td>
+          <td>${count}</td>
           <td>Triangle</td>
           <td>${ruselts} cm<sup>2</sup></td>
           <td>btn</td>
@@ -56,14 +59,14 @@ document.getElementById('thired-card').addEventListener("click",function(){
 
 // fourth card
 document.getElementById("fourth-card").addEventListener("click",function(){
+     count++;
      const num4 = getinnText('num4');
      const num40 = getinnText('num40');
      const ruselt = 0.5 * num4 * num40;
      const ruselts = (ruselt).toFixed(2);
-
      const tr = document.createElement("tr")
           tr.innerHTML = `
-          <td>${4}</td>
+          <td>${count}</td>
           <td>Triangle</td>
           <td>${ruselts} cm<sup>2</sup></td>
           <td>btn</td>
@@ -72,13 +75,14 @@ document.getElementById("fourth-card").addEventListener("click",function(){
 })
 // five card 
 document.getElementById("five-card").addEventListener("click",function(){
+     count++;
      const num5 = getinnText('num5');
      const num50 = getinnText('num50');
      const ruselt = 0.5 * num5 * num50;
      const ruselts = (ruselt).toFixed(2);
      const tr = document.createElement("tr")
           tr.innerHTML = `
-          <td>${5}</td>
+          <td>${count}</td>
           <td>Triangle</td>
           <td>${ruselts} cm<sup>2</sup></td>
           <td>btn</td>
@@ -87,13 +91,14 @@ document.getElementById("five-card").addEventListener("click",function(){
 })
 // six card
 document.getElementById("six-card").addEventListener("click",function(){
+     count++;
      const num6 = getinnText('num6');
      const num60 = getinnText('num60');
      const ruselt = Math.PI * (num6 * num60);
      const ruselts = (ruselt).toFixed(2);
      const tr = document.createElement("tr")
           tr.innerHTML = `
-          <td>${5}</td>
+          <td>${count}</td>
           <td>Triangle</td>
           <td>${ruselts} cm<sup>2</sup></td>
           <td>btn</td>
