@@ -70,6 +70,37 @@ document.getElementById("fourth-card").addEventListener("click",function(){
    `;
    document.getElementById("tbody-r").appendChild(tr);
 })
+// five card 
+document.getElementById("five-card").addEventListener("click",function(){
+     const num5 = getinnText('num5');
+     const num50 = getinnText('num50');
+     const ruselt = 0.5 * num5 * num50;
+     const ruselts = (ruselt).toFixed(2);
+     const tr = document.createElement("tr")
+          tr.innerHTML = `
+          <td>${5}</td>
+          <td>Triangle</td>
+          <td>${ruselts} cm<sup>2</sup></td>
+          <td>btn</td>
+   `;
+   document.getElementById("tbody-r").appendChild(tr);
+})
+// six card
+document.getElementById("six-card").addEventListener("click",function(){
+     const num6 = getinnText('num6');
+     const num60 = getinnText('num60');
+     const ruselt = Math.PI * (num6 * num60);
+     const ruselts = (ruselt).toFixed(2);
+     const tr = document.createElement("tr")
+          tr.innerHTML = `
+          <td>${5}</td>
+          <td>Triangle</td>
+          <td>${ruselts} cm<sup>2</sup></td>
+          <td>btn</td>
+   `;
+   document.getElementById("tbody-r").appendChild(tr);
+
+})
 
 
 
