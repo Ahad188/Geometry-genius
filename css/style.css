@@ -28,6 +28,7 @@ header h2{
      background: rgb(64, 128, 218);
      border-radius: 10px;
      letter-spacing: 2px;
+     cursor: pointer;
 }
 .blog:hover{
      background:rgb(114, 162, 230) ;
@@ -36,38 +37,30 @@ header h2{
 /* card container start*/
 .container{
      max-width: 1640px;
-     /* border: 2px solid red; */
      margin: 30px auto;
      display: flex;
      justify-content: space-between;
 }
 img{
-     width: 280px;
+     width: 350px;
 }
-/* .card-box img{
-     width: 200px;
-     margin-top: 20px;
-} */
 .box-img img{
      width: 100%;
 }
-/* .card-box img{
-     width: 100%;
-     margin-top: 20px;
-} */
 .card-container{
      display: flex;
      justify-content: space-around;
      align-items: center;
      flex-wrap: wrap;
-     gap: 10px;
-     /* flex-direction: column; */
+     gap: 20px;
 }
 .card-box{
      width: 350px;
      text-align: center;
      border: 2px solid grey;
      border-radius: 10px;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
 }
 .card-box h3{
      font-size: 3rem;
@@ -94,19 +87,20 @@ img{
      border-radius: 30px;
      letter-spacing: 2px;
      background: rgb(27, 109, 216);
+     cursor: pointer;
 }
 .calculate:hover{
      background: rgb(114, 162, 230);
 }
-
-.ruselt-container{
-     border: 2px solid yellowgreen;
+.card-box:hover{
+     box-shadow: 12px 8px 2px 1px rgba(27, 27, 28, 0.2);
 }
+
 .box-1{
-     /* background: rgb(197, 143, 143); */
+     background: rgb(212, 213, 199);   
 }
 .box-2{
-     /* background: rgb(112, 94, 94); */
+     background: rgb(243, 234, 234);
 }
 .box-3 h2,.box-4 h2,.box-5 h2,.box-6 h2{
      font-size: 1.5rem;
@@ -114,17 +108,16 @@ img{
      color: lightslategray;
 }
 .box-3{
-     /* background: rgb(126, 109, 140); */
-     
+     background: rgb(160, 229, 187);
 }
 .box-4{
-     /* background: rgb(113, 118, 218); */
+     background: rgb(192, 214, 92);
 }
 .box-5{
-     /* background: rgb(182, 72, 219); */
+     background: rgb(234, 223, 237);
 }
 .box-6{
-     /* background: rgb(55, 185, 138); */
+     background: rgb(231, 236, 235);
 }
 .ruselt-container{
      width: 600px;
@@ -141,12 +134,12 @@ table {
      border-collapse: collapse;
      width: 100%;
      margin-top: 30px;
-   }
-   
+   } 
    td, th {
      border: 1px solid #dddddd;
      text-align: left;
      padding: 8px;
+     font-size: 1rem;
    }
    
    tr:nth-child(even) {
@@ -159,7 +152,7 @@ table {
 
 
 
-
+/* mobile device for media */
 @media (max-width: 575px) { 
      header h2{
           font-size: 2rem;

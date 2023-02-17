@@ -8,9 +8,10 @@ h1{
      margin-top: 30px;
      color: lightslategray;
      font-size: 2.5rem; 
+     text-decoration: underline;
 }
 body{
-     background: lemonchiffon;
+     background: rgb(195, 190, 140);
 }
 section{
      max-width: 1240px;
@@ -26,3 +27,24 @@ section p{
      color: lightslategray;
      font-size: 1.7rem;
 }
+.qu{
+     text-align: justify;
+}
+
+@media (max-width: 575px) {
+     h1{
+          font-size: 2rem;
+          font-weight: 800;
+     }
+     section h2{
+          font-size: 1.8rem;
+          font-weight: 700;
+     }
+     section p{
+          font-size: 1.5rem;
+          font-weight: 500;
+     }
+     .qu{
+          text-align: center;
+     }
+ }

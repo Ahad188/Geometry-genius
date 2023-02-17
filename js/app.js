@@ -17,7 +17,7 @@ document.getElementById("first-btn").addEventListener("click",function(){
           <td>${count}</td>
           <td>Triangle</td>
           <td>${ruselts} cm<sup>2</sup></td>
-          <td>btn</td>
+          <td>Btn</td>
    `;
    document.getElementById("tbody-r").appendChild(tr);
 
@@ -35,7 +35,7 @@ document.getElementById('second-btn').addEventListener('click',function(){
           <td>${count}</td>
           <td>Rectangle</td>
           <td>${ruselts} cm<sup>2</sup></td>
-          <td>btn</td>
+          <td>Btn</td>
    `;
    document.getElementById("tbody-r").appendChild(tr)
 
@@ -50,9 +50,9 @@ document.getElementById('thired-card').addEventListener("click",function(){
      const tr = document.createElement("tr")
           tr.innerHTML = `
           <td>${count}</td>
-          <td>Triangle</td>
+          <td>Parallelogram</td>
           <td>${ruselts} cm<sup>2</sup></td>
-          <td>btn</td>
+          <td>Btn</td>
    `;
    document.getElementById("tbody-r").appendChild(tr);
 });
@@ -67,9 +67,9 @@ document.getElementById("fourth-card").addEventListener("click",function(){
      const tr = document.createElement("tr")
           tr.innerHTML = `
           <td>${count}</td>
-          <td>Triangle</td>
+          <td>Rhombus</td>
           <td>${ruselts} cm<sup>2</sup></td>
-          <td>btn</td>
+          <td>Btn</td>
    `;
    document.getElementById("tbody-r").appendChild(tr);
 })
@@ -83,9 +83,9 @@ document.getElementById("five-card").addEventListener("click",function(){
      const tr = document.createElement("tr")
           tr.innerHTML = `
           <td>${count}</td>
-          <td>Triangle</td>
+          <td>Pentagon</td>
           <td>${ruselts} cm<sup>2</sup></td>
-          <td>btn</td>
+          <td>Btn</td>
    `;
    document.getElementById("tbody-r").appendChild(tr);
 })
@@ -99,9 +99,9 @@ document.getElementById("six-card").addEventListener("click",function(){
      const tr = document.createElement("tr")
           tr.innerHTML = `
           <td>${count}</td>
-          <td>Triangle</td>
+          <td>Ellipse</td>
           <td>${ruselts} cm<sup>2</sup></td>
-          <td>btn</td>
+          <td>Btn</td>
    `;
    document.getElementById("tbody-r").appendChild(tr);
 
