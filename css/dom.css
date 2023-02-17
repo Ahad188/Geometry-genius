@@ -1,0 +1,28 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+h1{
+     text-align: center;
+     margin-top: 30px;
+     color: lightslategray;
+     font-size: 2.5rem; 
+}
+body{
+     background: lemonchiffon;
+}
+section{
+     max-width: 1240px;
+     margin: 30px auto;
+}
+section h2{
+     font-size: 2.3rem;
+     color: black;
+     margin-top: 40px;
+}
+section p{
+     margin-top: 40px;
+     color: lightslategray;
+     font-size: 1.7rem;
+}

@@ -1,0 +1,152 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+/* header start */
+header{
+     margin: 20px auto;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+header h2{
+     font-size: 2.3rem;
+     color: black;
+     font-weight: 800;
+}
+.geo{
+     color: slategray;
+     font-size: 2rem;
+}
+.blog{
+     width: 140px;
+     height: 60px;
+     outline: none;
+     border: none;
+     color:white;
+     background: rgb(64, 128, 218);
+     border-radius: 10px;
+     letter-spacing: 2px;
+}
+.blog:hover{
+     background:rgb(114, 162, 230) ;
+}
+/* header end */
+/* card container start*/
+.container{
+     max-width: 1640px;
+     border: 2px solid red;
+     margin: 30px auto;
+     display: flex;
+     justify-content: space-between;
+}
+img{
+     width: 280px;
+}
+.card-box img{
+     width: 200px;
+     margin-top: 20px;
+}
+.card-box img{
+     width: 100%;
+     margin-top: 20px;
+}
+.card-container{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 10px;
+     /* flex-direction: column; */
+}
+.card-box{
+     width: 350px;
+     text-align: center;
+     border: 2px solid grey;
+     border-radius: 10px;
+}
+.card-box h3{
+     margin-top: 10px;
+     margin-bottom: 5px;
+}
+.card-box h4{
+     color: lightslategray;
+}
+.card-box input[type=number]{
+     width: 80px;
+     height: 30px;
+     border-radius: 10px;
+     margin-top: 20px;
+     outline: none;
+     padding: 5px 10px;
+}
+.calculate{
+     display:block ;
+     text-align: center;
+     width: 90%;
+     margin: 20px auto;
+     padding: 10px 20px;
+     border-radius: 30px;
+     letter-spacing: 2px;
+     background: rgb(27, 109, 216);
+}
+.calculate:hover{
+     background: rgb(114, 162, 230);
+}
+
+.ruselt-container{
+     border: 2px solid yellowgreen;
+}
+/* .box-1{
+     background: rgb(197, 143, 143);
+}
+.box-2{
+     background: rgb(112, 94, 94);
+}
+.box-3{
+     background: rgb(126, 109, 140);
+}
+.box-4{
+     background: rgb(113, 118, 218);
+}
+.box-5{
+     background: rgb(182, 72, 219);
+}
+.box-6{
+     background: rgb(55, 185, 138);
+} */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px) { 
+     header h2{
+          font-size: 2rem;
+     }
+     .geo{
+          font-size: 1.5rem;
+     }
+     .blog{
+          width: 100px;
+          height: 60px; 
+     }
+     .container{
+           flex-direction: column;
+           width: 100%;
+     }
+     .card-box{
+          width: 300px;   
+     }
+     .card-box img{
+          width: 200px;
+          margin-top: 20px;
+     }
+ }
