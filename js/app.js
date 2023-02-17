@@ -15,7 +15,7 @@ document.getElementById("first-btn").addEventListener("click",function(){
           <td>${ruselt} cm<sup>2</sup></td>
           <td>btn</td>
    `;
-   document.getElementById("tbody-r").appendChild(tr)
+   document.getElementById("tbody-r").appendChild(tr);
 
 });
 
@@ -25,7 +25,7 @@ document.getElementById('second-btn').addEventListener('click',function(){
      const numb20 =  numberInput('num20');
      const ruselt = numb2* numb20;
      const tr = document.createElement("tr")
-   tr.innerHTML = `
+          tr.innerHTML = `
           <td>${2}</td>
           <td>Rectangle</td>
           <td>${ruselt} cm<sup>2</sup></td>
@@ -34,12 +34,38 @@ document.getElementById('second-btn').addEventListener('click',function(){
    document.getElementById("tbody-r").appendChild(tr)
 
 });
+// third card
+document.getElementById('thired-card').addEventListener("click",function(){ 
+     const n3 = getinnText('num3');
+     const n30 = getinnText('num30');
+     const ruselt = n3 * n30 ;
+
+     const tr = document.createElement("tr")
+          tr.innerHTML = `
+          <td>${1}</td>
+          <td>Triangle</td>
+          <td>${ruselt} cm<sup>2</sup></td>
+          <td>btn</td>
+   `;
+   document.getElementById("tbody-r").appendChild(tr);
+});
+
+// fourth card
 
 
+
+
+     function getinnText(id){
+          const element = document.getElementById(id);
+          const elementString = element.innerText;
+          const elementNumber = parseInt(elementString);
+             return elementNumber;
+     };
+     
  
-function numberInput(id){
-    const number = document.getElementById(id);
-   const numberString = number.value;
-   const numbers = parseFloat(numberString);
-   return numbers;
-}
+      function numberInput(id){
+          const number = document.getElementById(id);
+          const numberString = number.value;
+          const numbers = parseFloat(numberString);
+               return numbers;
+      };
