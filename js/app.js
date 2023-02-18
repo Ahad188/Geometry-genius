@@ -1,14 +1,21 @@
 document.getElementById("blog").addEventListener("click",function(){
      window.location.href = 'blog.html';
-})
+});
 // blog end 
           let count = 0;
  
-// first card
+// Triangle
 document.getElementById("first-btn").addEventListener("click",function(){
      count ++;
    const numb1 =  numberInput('num1');
    const numb2 =  numberInput('num10');
+
+     if(isNaN(numb1) || isNaN(numb2)){
+          return alert("please input a number")
+     }
+     else if(numb1 === '' ||numb1 <0 || numb2 === '' || numb2 <0){
+          return alert("please input positive number");
+     }
    const title1 = title("title1");
    const ruselt = 0.5 *(numb1 * numb2);
    const ruselts = (ruselt).toFixed(2);
@@ -17,11 +24,18 @@ document.getElementById("first-btn").addEventListener("click",function(){
 
 });
 
-// secound card
+// Rectangle
 document.getElementById('second-btn').addEventListener('click',function(){
      count++;
      const numb2 =  numberInput('num2');
      const numb20 =  numberInput('num20');
+
+     if(isNaN(numb2) || isNaN(numb20)){
+          return alert("please input a number")
+       }
+       else if(numb2 === '' ||numb2 <0 || numb20 === '' || numb20 <0){
+          return alert("please input positive number");
+       }
      const title2 = title("title2");
      const ruselt = numb2* numb20;
      const ruselts = (ruselt).toFixed(2);
@@ -29,7 +43,7 @@ document.getElementById('second-btn').addEventListener('click',function(){
      setTr(count,title2,ruselts);
 
 });
-// third card
+// Parallelogram
 document.getElementById('thired-card').addEventListener("click",function(){ 
      count++;
      const n3 = getinnText('num3');
@@ -41,7 +55,7 @@ document.getElementById('thired-card').addEventListener("click",function(){
      setTr(count,title3,ruselts);
 });
 
-// fourth card
+// Rhombus
 document.getElementById("fourth-card").addEventListener("click",function(){
      count++;
      const num4 = getinnText('num4');
@@ -51,8 +65,8 @@ document.getElementById("fourth-card").addEventListener("click",function(){
      const ruselts = (ruselt).toFixed(2);
 
      setTr(count,title4,ruselts);
-})
-// five card 
+});
+// Pentagon
 document.getElementById("five-card").addEventListener("click",function(){
      count++;
      const num5 = getinnText('num5');
@@ -62,8 +76,8 @@ document.getElementById("five-card").addEventListener("click",function(){
      const ruselts = (ruselt).toFixed(2);
       
      setTr(count,title5,ruselts);
-})
-// six card
+});
+// Ellipse
 document.getElementById("six-card").addEventListener("click",function(){
      count++;
      const num6 = getinnText('num6');
@@ -74,7 +88,7 @@ document.getElementById("six-card").addEventListener("click",function(){
      
      setTr(count,title6,ruselts);
 
-})
+});
      // define the title card
      function title(id){
           const title = document.getElementById(id);
@@ -97,9 +111,7 @@ document.getElementById("six-card").addEventListener("click",function(){
                return numbers;
       };
 
-
-
-     //  create tr element 
+     //  create table tr element 
 
       function setTr(count,title,ruselts){
           const tr = document.createElement("tr")
@@ -108,6 +120,6 @@ document.getElementById("six-card").addEventListener("click",function(){
           <td>${title}</td>
           <td>${ruselts} cm<sup>2</sup></td>
           <td>Con to m <sup>2</sup></td>
-   `;
-   document.getElementById("tbody-r").appendChild(tr);
+               `;
+          document.getElementById("tbody-r").appendChild(tr);
       };

@@ -11,7 +11,8 @@ h1{
      text-decoration: underline;
 }
 body{
-     background: rgb(22, 52, 49);
+     background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 section{
      max-width: 1240px;
@@ -24,7 +25,7 @@ section h2{
 }
 section p{
      margin-top: 40px;
-     color: lightslategray;
+     color: rgb(240, 243, 246);
      font-size: 1.7rem;
 }
 .qu{
@@ -32,7 +33,7 @@ section p{
 }
 ul li{
      font-size: 2rem;
-     color: lightslategrey;
+     color: white;
      margin-left: 30px;
 }
 
