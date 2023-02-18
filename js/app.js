@@ -107,7 +107,7 @@ document.getElementById("six-card").addEventListener("click",function(){
           <td>${count}</td>
           <td>${title}</td>
           <td>${ruselts} cm<sup>2</sup></td>
-          <td>Btn</td>
+          <td>Con to m <sup>2</sup></td>
    `;
    document.getElementById("tbody-r").appendChild(tr);
       };

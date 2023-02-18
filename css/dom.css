@@ -30,6 +30,11 @@ section p{
 .qu{
      text-align: justify;
 }
+ul li{
+     font-size: 2rem;
+     color: lightslategrey;
+     margin-left: 30px;
+}
 
 @media (max-width: 575px) {
      h1{

@@ -141,6 +141,10 @@ table {
      padding: 8px;
      font-size: 1rem;
    }
+   td:last-child{
+     background: rgb(114, 162, 230);
+     border-radius: 10px;
+   }
    
    tr:nth-child(even) {
      background-color: #dddddd;
